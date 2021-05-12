@@ -1,0 +1,18 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^4.0.0",
+    "typescript": "4.0.5"
+  },
+  "scripts": {
+    "postinstall": "lerna bootstrap",
+    "build-shared": "lerna run build --scope=shared",
+    "dev": "lerna run dev --scope=next-app",
+    "build-analyze": "lerna run build-analyze --scope=next-app"
+  },
+  "resolutions": {
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  }
+}
